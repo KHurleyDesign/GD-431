@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800");
+
+$font-weightbold: 800;
+
+.container {
+    display: grid;
+    grid-template-columns: minmax(100px, auto);
+    /*minmax(100px, auto) minmax(100px, auto) minmax(100px, auto); 
+    repeat(auto-fill, minmax (200px, 50px));
+    400px 25px 600px;*/
+    grid-gap: 1rem;
+    grid-template-row: auto;
+}
+
+.item-a {
+    grid-column: 2/3;
+}
+
+.item-b {
+    grid-column: 1/2;
+    grid-row: 2;
+    text-align: end;
+}
+
+.item-c {
+    grid-column: 2/3;
+    grid-row: 2;
+}
+
+body {
+    font-family: "Open Sans";
+}
+
+h1 {
+    font-weight: $font-weightbold;
+    font-size: 4rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.heading-color {
+    color: #009999;
+}
+
+.text--boldhead {
+    font-weight: $font-weightbold;
+    font-size: 1rem;
+}
+
+.text-boldpara {
+    font-weight: $font-weightbold;
+    font-size: 1.1rem;
+}
+
+ul {
+    list-style-type: none;
+}

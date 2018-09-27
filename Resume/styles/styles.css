@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800");
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(100px, auto);
+      grid-template-columns: minmax(100px, auto);
+  /*minmax(100px, auto) minmax(100px, auto) minmax(100px, auto); 
+    repeat(auto-fill, minmax (200px, 50px));
+    400px 25px 600px;*/
+  grid-gap: 1rem;
+  grid-template-row: auto;
+}
+
+.item-a {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.item-b {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  text-align: end;
+}
+
+.item-c {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+body {
+  font-family: "Open Sans";
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 4rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.heading-color {
+  color: #009999;
+}
+
+.text--boldhead {
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.text-boldpara {
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+/*# sourceMappingURL=styles.css.map */
