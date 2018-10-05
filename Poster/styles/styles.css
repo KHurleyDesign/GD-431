@@ -1,10 +1,10 @@
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(100px, auto);
-      grid-template-columns: minmax(100px, auto);
-  grid-gap: 1rem;
-  grid-template-row: auto;
+  -ms-grid-columns: 200px 200px 200px 200px 200px 200px;
+      grid-template-columns: 200px 200px 200px 200px 200px 200px;
+  -ms-grid-rows: 200px;
+      grid-template-rows: 200px;
 }
 
 .item-a {
@@ -17,9 +17,9 @@
 }
 
 .item-a2 {
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
   -ms-grid-column-span: 1;
-  grid-column: 2/3;
+  grid-column: 1/2;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
@@ -80,27 +80,27 @@
 }
 
 .item-h {
-  -ms-grid-column: 8;
+  -ms-grid-column: 7;
   -ms-grid-column-span: 1;
-  grid-column: 8/9;
+  grid-column: 7/8;
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
   grid-row: 4/5;
 }
 
 .item-i {
-  -ms-grid-column: 8;
+  -ms-grid-column: 7;
   -ms-grid-column-span: 1;
-  grid-column: 8/9;
+  grid-column: 7/8;
   -ms-grid-row: 5;
   -ms-grid-row-span: 1;
   grid-row: 5/6;
 }
 
 .item-j {
-  -ms-grid-column: 8;
+  -ms-grid-column: 7;
   -ms-grid-column-span: 1;
-  grid-column: 8/9;
+  grid-column: 7/8;
   -ms-grid-row: 7;
   -ms-grid-row-span: 1;
   grid-row: 7/8;
@@ -136,10 +136,12 @@ h3 {
   color: white;
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
+  text-align: end;
 }
 
 p {
   color: white;
   font-family: 'Open Sans', sans-serif;
+  text-align: end;
 }
 /*# sourceMappingURL=styles.css.map */
