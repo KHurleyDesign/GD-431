@@ -1,10 +1,39 @@
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 200px 200px 200px 200px 200px 200px;
-      grid-template-columns: 200px 200px 200px 200px 200px 200px;
+  -ms-grid-columns: 175px 175px 175px 175px 175px 175px;
+      grid-template-columns: 175px 175px 175px 175px 175px 175px;
   -ms-grid-rows: 200px 200px 200px 200px 200px 200px;
       grid-template-rows: 200px 200px 200px 200px 200px 200px;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100px 100px 100px 100px 100px 100px;
+        grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    -ms-grid-rows: 125px 125px 125px 125px 125px 125px;
+        grid-template-rows: 125px 125px 125px 125px 125px 125px;
+  }
+  .container h1 {
+    font-size: 7vw;
+  }
+  .container h2 {
+    font-size: 3vw;
+  }
+  .container h3 {
+    text-align: end;
+    font-size: 1vw;
+  }
+  .container p {
+    text-align: end;
+    font-size: 1vw;
+  }
+  .container img {
+    position: relative;
+    max-width: 600%;
+  }
 }
 
 .c1 {
@@ -117,5 +146,9 @@ h3 {
 
 p {
   text-align: end;
+}
+
+img {
+  display: block;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,8 +1,46 @@
+// Initial Grid Set-Up
 .container {
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px 200px 200px;
+    grid-template-columns: 175px 175px 175px 175px 175px 175px;
     grid-template-rows: 200px 200px 200px 200px 200px 200px;
 }
+
+// 1st breakpoint grid shift
+
+@media only screen and (max-width: 900px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 100px 100px 100px 100px 100px 100px;
+        grid-template-rows: 125px 125px 125px 125px 125px 125px;
+
+        h1 {
+            font-size: 7vw;
+        }
+
+        h2 {
+            font-size: 3vw;
+        }
+
+        h3 {
+            text-align: end;
+            font-size: 1vw;
+        }
+
+        p {
+            text-align: end;
+            font-size: 1vw;
+        }
+
+        img {
+            position: relative;
+            max-width: 600%;
+        }
+
+    }
+}
+
+
 
 //  classes for the grid columns
 .c1 {
@@ -89,4 +127,8 @@ h3 {
 
 p {
     text-align: end;
+}
+
+img {
+    display: block;
 }
