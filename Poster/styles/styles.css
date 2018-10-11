@@ -7,32 +7,39 @@
       grid-template-rows: 200px 200px 200px 200px 200px 200px;
 }
 
+@media only screen and (max-width: 2000px) {
+  .container {
+    -ms-grid-columns: 150px 150px 150px 150px 150px 150px;
+        grid-template-columns: 150px 150px 150px 150px 150px 150px;
+    -ms-grid-rows: 175px 175px 175px 175px 175px 175px;
+        grid-template-rows: 175px 175px 175px 175px 175px 175px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .container {
+    -ms-grid-columns: 125px 125px 125px 125px 125px 125px;
+        grid-template-columns: 125px 125px 125px 125px 125px 125px;
+    -ms-grid-rows: 150px 150px 150px 150px 150px 150px;
+        grid-template-rows: 150px 150px 150px 150px 150px 150px;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .container {
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: 100px 100px 100px 100px 100px 100px;
         grid-template-columns: 100px 100px 100px 100px 100px 100px;
     -ms-grid-rows: 125px 125px 125px 125px 125px 125px;
         grid-template-rows: 125px 125px 125px 125px 125px 125px;
   }
-  .container h1 {
-    font-size: 7vw;
-  }
-  .container h2 {
-    font-size: 3vw;
-  }
-  .container h3 {
-    text-align: end;
-    font-size: 1vw;
-  }
-  .container p {
-    text-align: end;
-    font-size: 1vw;
-  }
-  .container img {
-    position: relative;
-    max-width: 600%;
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    -ms-grid-columns: 75px 75px 75px 75px 75px 75px;
+        grid-template-columns: 75px 75px 75px 75px 75px 75px;
+    -ms-grid-rows: 100px 100px 100px 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px 100px 100px 100px;
   }
 }
 
@@ -140,15 +147,40 @@ h1 {
   font-size: 7vw;
 }
 
+@media only screen and (max-width: 2000px) {
+  h2 {
+    font-size: 3vw;
+  }
+}
+
 h3 {
   text-align: end;
+}
+
+@media only screen and (max-width: 2000px) {
+  h3 {
+    font-size: 1vw;
+  }
 }
 
 p {
   text-align: end;
 }
 
+@media only screen and (max-width: 2000px) {
+  p {
+    font-size: 1vw;
+  }
+}
+
 img {
   display: block;
+}
+
+@media only screen and (max-width: 2000px) {
+  img {
+    position: relative;
+    max-width: 600%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
