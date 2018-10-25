@@ -1,0 +1,146 @@
+// Initial Grid Set-Up
+.container {
+    display: grid;
+    grid-template-columns: 175px 175px 175px 175px 175px 175px;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px;
+
+    // 1st breakpoint grid shift
+    @media only screen and (max-width: 2000px) {
+        grid-template-columns: 150px 150px 150px 150px 150px 150px;
+        grid-template-rows: 175px 175px 175px 175px 175px 175px;
+    }
+
+    //2nd breakpoint grid shift
+    @media only screen and (max-width: 1500px) {
+        grid-template-columns: 125px 125px 125px 125px 125px 125px;
+        grid-template-rows: 150px 150px 150px 150px 150px 150px;
+    }
+
+    // 3rd breakpoint grid shift
+    @media only screen and (max-width: 900px) {
+        grid-template-columns: 100px 100px 100px 100px 100px 100px;
+        grid-template-rows: 125px 125px 125px 125px 125px 125px;
+    }
+
+    // 4th breakpoint grid shift
+    @media only screen and (max-width: 500px) {
+        grid-template-columns: 75px 75px 75px 75px 75px 75px;
+        grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    }
+
+}
+
+
+
+//  classes for the grid columns
+.c1 {
+    grid-column: 1/2;
+}
+
+.c2 {
+    grid-column: 2/3;
+}
+
+.c3 {
+    grid-column: 3/4;
+}
+
+.c4 {
+    grid-column: 4/5;
+}
+
+.c5 {
+    grid-column: 5/6;
+}
+
+.c6 {
+    grid-column: 6/7;
+}
+
+.c7 {
+    grid-column: 7/8;
+}
+
+.c8 {
+    grid-column: 8/9;
+}
+
+// classes for the rows
+
+.r1 {
+    grid-row: 1/2;
+}
+
+.r2 {
+    grid-row: 2/3;
+}
+
+.r3 {
+    grid-row: 3/4;
+}
+
+.r4 {
+    grid-row: 4/5;
+}
+
+.r5 {
+    grid-row: 5/6;
+}
+
+.r6 {
+    grid-row: 6/7;
+}
+
+.fontweight-800 {
+    font-weight: 800;
+}
+
+
+h1,
+h2,
+h3,
+p {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    font-size: 7vw;
+}
+
+h2 {
+    @media only screen and (max-width: 2000px) {
+        font-size: 3vw;
+    }
+}
+
+h3 {
+    text-align: end;
+
+    @media only screen and (max-width: 2000px) {
+        font-size: 1vw;
+    }
+
+}
+
+p {
+    text-align: end;
+
+    @media only screen and (max-width: 2000px) {
+        font-size: 1vw;
+    }
+
+}
+
+img {
+    display: block;
+
+    @media only screen and (max-width: 2000px) {
+        position: relative;
+        max-width: 600%;
+    }
+}
