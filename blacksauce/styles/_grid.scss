@@ -1,10 +1,11 @@
 //setting up the initial grid
 .container {
     display: grid;
-    grid-template-columns: 2fr 5fr 2fr;
+    grid-template-columns: 2fr 5fr 3fr;
     grid-template-rows: auto;
 
 }
+
 
 .coverImage {
     grid-column: 1/4;
@@ -20,18 +21,20 @@
 .intro__bodyText {
     grid-column: 2/4;
     grid-row: 3/4;
+    margin: 0;
 }
 
 .button__orderNow {
     grid-column: 3/4;
     grid-row: 4/5;
+    margin: 0;
+    padding: 5px;
 }
 
 .button__catering {
     grid-column: 2/3;
     grid-row: 5/6;
     justify-self: center;
-
 }
 
 .button__news {

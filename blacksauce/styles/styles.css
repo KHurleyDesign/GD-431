@@ -1,8 +1,8 @@
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 5fr 2fr;
-      grid-template-columns: 2fr 5fr 2fr;
+  -ms-grid-columns: 2fr 5fr 3fr;
+      grid-template-columns: 2fr 5fr 3fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
 }
@@ -33,6 +33,7 @@
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
+  margin: 0;
 }
 
 .button__orderNow {
@@ -42,6 +43,8 @@
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
   grid-row: 4/5;
+  margin: 0;
+  padding: 5px;
 }
 
 .button__catering {
@@ -107,7 +110,7 @@ p {
   font-family: 'Open Sans', sans-serif;
 }
 
-.button__color {
+.background__orange {
   background-color: #F28705;
 }
 
