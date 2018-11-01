@@ -1,40 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: layouts/default.njk
+title: DID IT WORK?
+---
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/styles.css">
-    <!-- The normilize does not seem to be working, though I feel like I linked it corectly -->
-    <link rel="normalize" href="styles/libraries/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-    <link rel="normalize" href="libraries/normalize.css">
-    <title>Blackasauce Homepage</title>
-</head>
+{%include "_header.html"%}
+<div class="container">
+    <img class="coverImage fill" src="coverPhoto.jpg" alt="Three biscuits on a woden surface with berries in the background.">
+    <div class="intro__heading-text">
+        <h1 class=" u-brandOrange u-fontWeightBold">Welcome</h1>
+    </div>
 
-
-
-<body>
-    <div class="container">
-        <img class="coverImage fill" src="coverPhoto.jpg" alt="Three biscuits on a woden surface with berries in the background.">
-        <div class="intro__heading-text">
-            <h1 class=" u-brandOrange u-fontWeightBold">Welcome</h1>
-        </div>
-
-        <div class="intro__bodyText textColor__white">
-            <p>Blacksauce Kitchen is a mobile food
-                business in Baltimore. Handmade
-                biscuits are our signature product,
-                thougt we make so much more.</p>
-        </div>
-
-
-        <div><button class=" button u-fontWeightBold button__orderNow">Order Now</button></div>
+    <div class="intro__bodyText textColor__white">
+        <p>Blacksauce Kitchen is a mobile food
+            business in Baltimore. Handmade
+            biscuits are our signature product,
+            thougt we make so much more.</p>
     </div>
 
 
-    <!-- <p class="button__catering">Catering</p>
+    <div><button class=" button u-fontWeightBold button__orderNow">Order Now</button></div>
+</div>
+
+
+<!-- <p class="button__catering">Catering</p>
 
     <p class="button__news">News</p>
     <p class="button__info">Info</p>
@@ -48,7 +36,7 @@
     <p class="testmonial__name"> Jamila & Donald</p> -->
 
 
-    <!-- <h2>Get In Touch</h2>
+<!-- <h2>Get In Touch</h2>
     <p>Follow Us On</p> -->
 </body>
 
