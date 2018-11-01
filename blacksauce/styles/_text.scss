@@ -5,6 +5,17 @@ p {
         sans-serif;
 }
 
+.textColor__white {
+    color: white;
+}
+
 .background__orange {
     background-color: #F28705;
+}
+
+.background__black {
+    border-radius: 25px;
+    background: rgba(0, 0, 0, .5);
+    padding-left: 2%;
+    width: 200px;
 }
