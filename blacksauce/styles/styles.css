@@ -1,3 +1,7 @@
+body {
+  margin: 0px;
+}
+
 .container {
   display: -ms-grid;
   display: grid;
@@ -5,20 +9,6 @@
       grid-template-columns: 2fr 5fr 3fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-}
-
-.containerTwo {
-  position: relative;
-}
-
-.text-block {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background-color: black;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .coverImage {
@@ -30,24 +20,31 @@
   grid-row: 1/2;
 }
 
+.blackBackground {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
 .intro__heading-text {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
   -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  margin: 0;
+  grid-row: 1/2;
 }
 
 .intro__bodyText {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-column: 2/4;
-  -ms-grid-row: 3;
+  -ms-grid-row: 1;
   -ms-grid-row-span: 1;
-  grid-row: 3/4;
-  margin: 0;
+  grid-row: 1/2;
 }
 
 .button__orderNow {
@@ -138,5 +135,9 @@ p {
 
 .u-fontWeightReg {
   font-weight: 400;
+}
+
+.u-transparentBlack {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 /*# sourceMappingURL=styles.css.map */

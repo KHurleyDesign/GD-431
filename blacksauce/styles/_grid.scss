@@ -1,4 +1,11 @@
+// added this text in place of a normilize function for the moment
+body {
+    margin: 0px;
+}
+
 //setting up the initial grid
+
+
 .container {
     display: grid;
     grid-template-columns: 2fr 5fr 3fr;
@@ -6,36 +13,26 @@
 
 }
 
-.containerTwo {
-    position: relative;
-}
-
-
-.text-block {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: black;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
 .coverImage {
     grid-column: 1/4;
     grid-row: 1/2;
 }
 
+.blackBackground {
+    grid-column: 2/4;
+    grid-row: 1/2;
+
+}
+
 .intro__heading-text {
     grid-column: 2/3;
-    grid-row: 2/3;
-    margin: 0;
+    grid-row: 1/2;
+
 }
 
 .intro__bodyText {
     grid-column: 2/4;
-    grid-row: 3/4;
-    margin: 0;
+    grid-row: 1/2;
 }
 
 .button__orderNow {
