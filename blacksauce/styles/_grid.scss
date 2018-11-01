@@ -2,46 +2,59 @@
 .container {
     display: grid;
     grid-template-columns: 2fr 5fr 2fr;
+    grid-template-rows: auto;
 
 }
 
 .coverImage {
     grid-column: 1/4;
+    grid-row: 1/2;
 }
 
 .intro__heading-text {
     grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 0;
 }
 
 .intro__bodyText {
     grid-column: 2/4;
+    grid-row: 3/4;
 }
 
 .button__orderNow {
     grid-column: 3/4;
+    grid-row: 4/5;
 }
 
 .button__catering {
     grid-column: 2/3;
+    grid-row: 5/6;
     justify-self: center;
+
 }
 
 .button__news {
     grid-column: 2/3;
+    grid-row: 6/7;
     justify-self: center;
 }
 
 .button__info {
     grid-column: 2/3;
+    grid-row: 7/8;
     justify-self: center;
 }
 
 .testmonial__text {
     grid-column: 2/4;
+    grid-row: 8/9;
 
 }
 
 .testmonial__name {
     grid-column: 2/3;
+    grid-row: 9/10;
     justify-self: center;
+
 }

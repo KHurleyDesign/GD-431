@@ -3,36 +3,54 @@
   display: grid;
   -ms-grid-columns: 2fr 5fr 2fr;
       grid-template-columns: 2fr 5fr 2fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
 }
 
 .coverImage {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
 }
 
 .intro__heading-text {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  margin: 0;
 }
 
 .intro__bodyText {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-column: 2/4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
 }
 
 .button__orderNow {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3/4;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
 }
 
 .button__catering {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5/6;
   -ms-grid-column-align: center;
       justify-self: center;
 }
@@ -41,6 +59,9 @@
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  grid-row: 6/7;
   -ms-grid-column-align: center;
       justify-self: center;
 }
@@ -49,6 +70,9 @@
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 1;
+  grid-row: 7/8;
   -ms-grid-column-align: center;
       justify-self: center;
 }
@@ -57,12 +81,18 @@
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-column: 2/4;
+  -ms-grid-row: 8;
+  -ms-grid-row-span: 1;
+  grid-row: 8/9;
 }
 
 .testmonial__name {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 1;
+  grid-row: 9/10;
   -ms-grid-column-align: center;
       justify-self: center;
 }
@@ -75,5 +105,21 @@ h1,
 h2,
 p {
   font-family: 'Open Sans', sans-serif;
+}
+
+.button__color {
+  background-color: #F28705;
+}
+
+.u-brandOrange {
+  color: #F28705;
+}
+
+.u-fontWeightBold {
+  font-weight: 700;
+}
+
+.u-fontWeightReg {
+  font-weight: 400;
 }
 /*# sourceMappingURL=styles.css.map */
