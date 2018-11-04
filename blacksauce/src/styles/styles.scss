@@ -1,4 +1,12 @@
-@import "grid";
-@import "images";
-@import "text";
-@import "utilityClasses";
+@import "libraries/normalize.scss",
+"utilityClasses",
+"grid",
+"images",
+"text";
+
+
+.container {
+    background-image: url(../coverPhoto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
