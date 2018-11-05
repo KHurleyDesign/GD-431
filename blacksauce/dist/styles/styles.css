@@ -346,14 +346,24 @@ template {
   font-weight: 400;
 }
 
+.u-black {
+  background-color: black;
+}
+
+.u-white {
+  color: white;
+}
+
 .u-transparentBlack {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 75px;
+  padding: 5%;
 }
 
 .button {
   background-color: #F28705;
   border: none;
-  border-radius: 20px;
+  border-radius: 25px;
   color: black;
   padding: 15px 32px;
   text-align: center;
@@ -364,8 +374,41 @@ template {
   cursor: pointer;
 }
 
-body {
-  margin: 0px;
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 5fr 3fr;
+      grid-template-columns: 2fr 5fr 3fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+}
+
+.intro__heading-text {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.intro__bodyText {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.button__orderNow {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  margin: none;
+  padding: 5px;
 }
 
 .fill {

@@ -1,43 +1,27 @@
 //setting up the initial grid
 
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 5fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
 
-// .container {
-//     display: grid;
-//     grid-template-columns: 2fr 5fr 3fr;
-//     grid-template-rows: 1fr 1fr 1fr;
+.intro__heading-text {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
 
-// }
+.intro__bodyText {
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
 
-// .coverImage {
-//     grid-column: 1/4;
-//     grid-row: 1/2;
-// }
-
-// .blackBackground {
-//     grid-column: 2/4;
-//     grid-row: 1/2;
-
-// }
-
-// .intro__heading-text {
-//     grid-column: 2/3;
-//     grid-row: 1/2;
-
-
-// }
-
-// .intro__bodyText {
-//     grid-column: 2/4;
-//     grid-row: 1/2;
-//     padding-top: 20%;
-// }
-
-// .button__orderNow {
-//     grid-column: 3/4;
-//     grid-row: 4/5;
-//     margin: 0;
-//     padding: 5px;
-// }
+.button__orderNow {
+    grid-column: 3/4;
+    grid-row: 1;
+    margin: none;
+    padding: 5px;
+}
 
 // .button__catering {
 //     grid-column: 2/3;

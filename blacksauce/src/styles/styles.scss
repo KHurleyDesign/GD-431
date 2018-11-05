@@ -1,4 +1,4 @@
-@import "libraries/normalize.scss",
+@import "libraries/normalize",
 "utilityClasses",
 "grid",
 "images",
@@ -9,4 +9,5 @@
     background-image: url(../coverPhoto.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+
 }
