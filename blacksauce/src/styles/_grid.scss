@@ -17,7 +17,7 @@
 .pageGrid {
     display: grid;
     grid-template-columns: 2fr 5fr 2fr;
-    grid-template-rows: .5fr 1fr .5fr;
+    grid-template-rows: .5fr 1fr;
 }
 
 //placement of the logo in the header
@@ -74,23 +74,36 @@
     position: center;
 }
 
-// .button__catering {
-//     grid-column: 2/3;
-//     grid-row: 5/6;
-//     justify-self: center;
-// }
+//placment for background image for newsImage
+.newsImage {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 100%;
+}
 
-// .button__news {
-//     grid-column: 2/3;
-//     grid-row: 6/7;
-//     justify-self: center;
-// }
+//button for news
+.button__news {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: none;
+    padding: 5px;
+    position: center;
+}
 
-// .button__info {
-//     grid-column: 2/3;
-//     grid-row: 7/8;
-//     justify-self: center;
-// }
+.orderImage {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 100%;
+}
+
+//button for news
+.button__order {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: none;
+    padding: 5px;
+    position: center;
+}
 
 // .testmonial__text {
 //     grid-column: 2/4;

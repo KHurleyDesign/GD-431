@@ -399,8 +399,8 @@ template {
   display: grid;
   -ms-grid-columns: 2fr 5fr 2fr;
       grid-template-columns: 2fr 5fr 2fr;
-  -ms-grid-rows: .5fr 1fr .5fr;
-      grid-template-rows: .5fr 1fr .5fr;
+  -ms-grid-rows: .5fr 1fr;
+      grid-template-rows: .5fr 1fr;
 }
 
 .logo_nav {
@@ -465,6 +465,50 @@ template {
 }
 
 .button__catering {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  margin: none;
+  padding: 5px;
+  position: center;
+}
+
+.newsImage {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  width: 100%;
+}
+
+.button__news {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  margin: none;
+  padding: 5px;
+  position: center;
+}
+
+.orderImage {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  width: 100%;
+}
+
+.button__order {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
