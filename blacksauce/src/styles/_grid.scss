@@ -16,8 +16,8 @@
 //general grid for the page
 .pageGrid {
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: auto;
+    grid-template-columns: 2fr 5fr 2fr;
+    grid-template-rows: .5fr 1fr .5fr;
 }
 
 //placement of the logo in the header
@@ -58,9 +58,20 @@
 
 }
 
+//placment for background image for cateringbutton
 .cateringImage {
     grid-column: 2/3;
+    grid-row: 2/3;
     width: 100%;
+}
+
+//button for catering
+.button__catering {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: none;
+    padding: 5px;
+    position: center;
 }
 
 // .button__catering {
