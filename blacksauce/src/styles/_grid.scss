@@ -1,21 +1,53 @@
-//setting up the initial grid
+//background image for intro text
+.container {
+    background-image: url(../coverPhoto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
-.grid {
+}
+
+//grid for the header section
+.nav_grid {
     display: grid;
-    grid-template-columns: 2fr 5fr 3fr;
+    grid-template-columns: 2fr 2fr 3fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
 
+//general grid for the page
+.pageGrid {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: auto;
+}
+
+//placement of the logo in the header
+.logo_nav {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 100%;
+    margin-left: 15px;
+}
+
+//placment of the menu button
+.menu_button {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: end;
+}
+
+//placement of the introText
 .intro__heading-text {
     grid-column: 1/2;
     grid-row: 1/2;
 }
 
+//placment of the body text
 .intro__bodyText {
     grid-column: 2/4;
     grid-row: 1/2;
 }
 
+//placement of the order now button
 .button__orderNow {
     grid-column: 3/4;
     grid-row: 1;
@@ -26,9 +58,9 @@
 
 }
 
-.menu_button {
+.cateringImage {
     grid-column: 2/3;
-    grid-row: 2/3;
+    width: 100%;
 }
 
 // .button__catering {
