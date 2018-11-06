@@ -21,6 +21,14 @@
     grid-row: 1;
     margin: none;
     padding: 5px;
+    position: absolute;
+    left: 60%;
+
+}
+
+.menu_button {
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
 
 // .button__catering {

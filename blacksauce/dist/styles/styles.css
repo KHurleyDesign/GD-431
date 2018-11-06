@@ -358,6 +358,11 @@ template {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 75px;
   padding: 5%;
+  position: relative;
+}
+
+.u-marginNone {
+  margin: 0;
 }
 
 .button {
@@ -409,6 +414,17 @@ template {
   grid-row: 1;
   margin: none;
   padding: 5px;
+  position: absolute;
+  left: 60%;
+}
+
+.menu_button {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
 }
 
 .fill {
