@@ -105,15 +105,15 @@
     position: center;
 }
 
-// .testmonial__text {
-//     grid-column: 2/4;
-//     grid-row: 8/9;
+//placment for the rextmonial text
+.testmonial__text {
+    grid-column: 1/4;
+    padding: 30px;
 
-// }
+}
 
-// .testmonial__name {
-//     grid-column: 2/3;
-//     grid-row: 9/10;
-//     justify-self: center;
-
-// }
+//placment for the textmonial names
+.testmonial__name {
+    grid-column: 2/3;
+    justify-self: center;
+}

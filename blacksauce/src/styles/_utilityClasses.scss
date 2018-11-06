@@ -38,7 +38,14 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    font-family: 'Open Sans',
+        sans-serif;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+}
+
+span {
+    display: block;
+    text-align: center;
 }

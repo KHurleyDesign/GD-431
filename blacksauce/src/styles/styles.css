@@ -374,9 +374,15 @@ template {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+span {
+  display: block;
+  text-align: center;
 }
 
 .container {
@@ -518,6 +524,21 @@ template {
   margin: none;
   padding: 5px;
   position: center;
+}
+
+.testmonial__text {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  padding: 30px;
+}
+
+.testmonial__name {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .fill {
