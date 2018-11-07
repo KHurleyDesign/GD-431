@@ -385,6 +385,13 @@ span {
   text-align: center;
 }
 
+.homePhotoButton {
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  position: relative;
+}
+
 .container {
   background-image: url(../coverPhoto.jpg);
   background-repeat: no-repeat;
@@ -564,5 +571,9 @@ p {
   background: rgba(0, 0, 0, 0.5);
   padding-left: 2%;
   width: 200px;
+}
+
+.paraLeading {
+  line-height: 150%;
 }
 /*# sourceMappingURL=styles.css.map */
