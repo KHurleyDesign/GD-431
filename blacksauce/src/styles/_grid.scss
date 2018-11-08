@@ -17,7 +17,7 @@
 .pageGrid {
     display: grid;
     grid-template-columns: 2fr 5fr 2fr;
-    grid-template-rows: repeat(5, .5fr);
+    grid-template-rows: repeat(6, .5fr);
 }
 
 //placement of the logo in the header
@@ -108,7 +108,7 @@
 //placment for the rextmonial text
 .testmonial__text {
     grid-column: 1/4;
-    grid-row: 8/9;
+    grid-row: 9/10;
     padding: 30px;
 
 }

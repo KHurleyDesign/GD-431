@@ -392,6 +392,32 @@ span {
   position: relative;
 }
 
+input[type=text] {
+  width: 50%;
+}
+
+label {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+input[type=button],
+input[type=submit],
+input[type=reset] {
+  background-color: #F28705;
+  border: none;
+  border-radius: 25px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
 .container {
   background-image: url(../coverPhoto.jpg);
   background-repeat: no-repeat;
@@ -412,8 +438,8 @@ span {
   display: grid;
   -ms-grid-columns: 2fr 5fr 2fr;
       grid-template-columns: 2fr 5fr 2fr;
-  -ms-grid-rows: (0.5fr)[5];
-      grid-template-rows: repeat(5, 0.5fr);
+  -ms-grid-rows: (0.5fr)[6];
+      grid-template-rows: repeat(6, 0.5fr);
 }
 
 .logo_nav {
@@ -537,9 +563,9 @@ span {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
-  -ms-grid-row: 8;
+  -ms-grid-row: 9;
   -ms-grid-row-span: 1;
-  grid-row: 8/9;
+  grid-row: 9/10;
   padding: 30px;
 }
 
