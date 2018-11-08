@@ -419,7 +419,7 @@ input[type=reset] {
 }
 
 .container {
-  background-image: url(../coverPhoto.jpg);
+  background-image: url(../images/coverPhoto.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
