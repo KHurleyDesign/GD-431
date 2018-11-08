@@ -412,8 +412,8 @@ span {
   display: grid;
   -ms-grid-columns: 2fr 5fr 2fr;
       grid-template-columns: 2fr 5fr 2fr;
-  -ms-grid-rows: .5fr 1fr;
-      grid-template-rows: .5fr 1fr;
+  -ms-grid-rows: (0.5fr)[5];
+      grid-template-rows: repeat(5, 0.5fr);
 }
 
 .logo_nav {
@@ -493,9 +493,9 @@ span {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  -ms-grid-row: 2;
+  -ms-grid-row: 4;
   -ms-grid-row-span: 1;
-  grid-row: 2/3;
+  grid-row: 4/5;
   width: 100%;
 }
 
@@ -503,9 +503,9 @@ span {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  -ms-grid-row: 2;
+  -ms-grid-row: 4;
   -ms-grid-row-span: 1;
-  grid-row: 2/3;
+  grid-row: 4/5;
   margin: none;
   padding: 5px;
   position: center;
@@ -515,9 +515,9 @@ span {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  -ms-grid-row: 2;
+  -ms-grid-row: 6;
   -ms-grid-row-span: 1;
-  grid-row: 2/3;
+  grid-row: 6/7;
   width: 100%;
 }
 
@@ -525,9 +525,9 @@ span {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  -ms-grid-row: 2;
+  -ms-grid-row: 6;
   -ms-grid-row-span: 1;
-  grid-row: 2/3;
+  grid-row: 6/7;
   margin: none;
   padding: 5px;
   position: center;
@@ -537,6 +537,9 @@ span {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
+  -ms-grid-row: 8;
+  -ms-grid-row-span: 1;
+  grid-row: 8/9;
   padding: 30px;
 }
 
@@ -544,6 +547,9 @@ span {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  -ms-grid-row: 8;
+  -ms-grid-row-span: 1;
+  grid-row: 8/9;
   -ms-grid-column-align: center;
       justify-self: center;
 }

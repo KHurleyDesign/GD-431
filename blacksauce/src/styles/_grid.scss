@@ -17,7 +17,7 @@
 .pageGrid {
     display: grid;
     grid-template-columns: 2fr 5fr 2fr;
-    grid-template-rows: .5fr 1fr;
+    grid-template-rows: repeat(5, .5fr);
 }
 
 //placement of the logo in the header
@@ -77,14 +77,14 @@
 //placment for background image for newsImage
 .newsImage {
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 4/5;
     width: 100%;
 }
 
 //button for news
 .button__news {
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 4/5;
     margin: none;
     padding: 5px;
     position: center;
@@ -92,14 +92,14 @@
 
 .orderImage {
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 6/7;
     width: 100%;
 }
 
 //button for news
 .button__order {
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 6/7;
     margin: none;
     padding: 5px;
     position: center;
@@ -108,6 +108,7 @@
 //placment for the rextmonial text
 .testmonial__text {
     grid-column: 1/4;
+    grid-row: 8/9;
     padding: 30px;
 
 }
@@ -115,6 +116,7 @@
 //placment for the textmonial names
 .testmonial__name {
     grid-column: 2/3;
+    grid-row: 8/9;
     justify-self: center;
 }
 
