@@ -18,6 +18,8 @@
     display: grid;
     grid-template-columns: 2fr 5fr 2fr;
     grid-template-rows: repeat(6, .5fr);
+    align-items: center;
+    justify-items: center;
 }
 
 //placement of the logo in the header
@@ -71,7 +73,6 @@
     grid-row: 2/3;
     margin: none;
     padding: 5px;
-    position: center;
 }
 
 //placment for background image for newsImage
@@ -87,7 +88,6 @@
     grid-row: 4/5;
     margin: none;
     padding: 5px;
-    position: center;
 }
 
 .orderImage {
@@ -102,7 +102,6 @@
     grid-row: 6/7;
     margin: none;
     padding: 5px;
-    position: center;
 }
 
 //placment for the rextmonial text

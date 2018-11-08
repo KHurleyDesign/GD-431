@@ -440,6 +440,10 @@ input[type=reset] {
       grid-template-columns: 2fr 5fr 2fr;
   -ms-grid-rows: (0.5fr)[6];
       grid-template-rows: repeat(6, 0.5fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
 }
 
 .logo_nav {
@@ -512,7 +516,6 @@ input[type=reset] {
   grid-row: 2/3;
   margin: none;
   padding: 5px;
-  position: center;
 }
 
 .newsImage {
@@ -534,7 +537,6 @@ input[type=reset] {
   grid-row: 4/5;
   margin: none;
   padding: 5px;
-  position: center;
 }
 
 .orderImage {
@@ -556,7 +558,6 @@ input[type=reset] {
   grid-row: 6/7;
   margin: none;
   padding: 5px;
-  position: center;
 }
 
 .testmonial__text {
