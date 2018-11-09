@@ -438,8 +438,8 @@ input[type=reset] {
   display: grid;
   -ms-grid-columns: 2fr 5fr 2fr;
       grid-template-columns: 2fr 5fr 2fr;
-  -ms-grid-rows: (0.5fr)[6];
-      grid-template-rows: repeat(6, 0.5fr);
+  -ms-grid-rows: (0.5fr)[7];
+      grid-template-rows: repeat(7, 0.5fr);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -564,9 +564,9 @@ input[type=reset] {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
-  -ms-grid-row: 9;
+  -ms-grid-row: 8;
   -ms-grid-row-span: 1;
-  grid-row: 9/10;
+  grid-row: 8/9;
   padding: 30px;
 }
 
@@ -574,9 +574,6 @@ input[type=reset] {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  -ms-grid-row: 8;
-  -ms-grid-row-span: 1;
-  grid-row: 8/9;
   -ms-grid-column-align: center;
       justify-self: center;
 }
