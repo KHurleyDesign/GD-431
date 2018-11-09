@@ -29,6 +29,10 @@
     margin: 0;
 }
 
+.footerPadding {
+    padding: 5%;
+}
+
 .button {
     background-color: #F28705;
     border: none;
@@ -43,11 +47,6 @@
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-}
-
-span {
-    display: block;
-    text-align: center;
 }
 
 .homePhotoButton {
