@@ -1,0 +1,27 @@
+input[type=text] {
+    width: 50%;
+}
+
+label {
+    font-family: 'Open Sans',
+        sans-serif;
+    color: white;
+}
+
+input[type=button],
+input[type=submit],
+input[type=reset] {
+    background-color: #F28705;
+    border: none;
+    border-radius: 25px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Open Sans',
+        sans-serif;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
