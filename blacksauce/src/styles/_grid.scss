@@ -15,8 +15,8 @@
 
 //general grid for the page
 .pageGrid {
-    display: grid;
     align-items: center;
+    display: grid;
     justify-items: center;
     margin-left: 1em;
     margin-right: 1em;
@@ -30,8 +30,8 @@
 .logo_nav {
     grid-column: 1/2;
     grid-row: 2/3;
-    width: 100%;
     margin-left: 15px;
+    width: 100%;
 }
 
 //placment of the menu button
@@ -57,10 +57,10 @@
 .button__orderNow {
     grid-column: 3/4;
     grid-row: 1;
+    left: 60%;
     margin: none;
     padding: 5px;
     position: absolute;
-    left: 60%;
 
 }
 
