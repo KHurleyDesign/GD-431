@@ -7,14 +7,14 @@
 }
 
 //grid for the header section
-.nav_grid {
+.grid--nav {
     display: grid;
     grid-template-columns: 2fr 2fr 3fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
 
 //general grid for the page
-.pageGrid {
+.grid--page {
     align-items: center;
     display: grid;
     justify-items: center;
@@ -26,7 +26,10 @@
     }
 }
 
+.grid--socialMedia {}
+
 //placement of the logo in the header
+
 .logo_nav {
     grid-column: 1/2;
     grid-row: 2/3;
@@ -48,13 +51,13 @@
 }
 
 //placment of the body text
-.intro__bodyText {
+.intro--bodyText {
     grid-column: 2/4;
     grid-row: 1/2;
 }
 
 //placement of the order now button
-.button__orderNow {
+.button--orderNow {
     grid-column: 3/4;
     grid-row: 1;
     left: 60%;
@@ -72,7 +75,7 @@
 }
 
 //button for catering
-.button__catering {
+.button--catering {
     grid-column: 1/2;
     grid-row: 1/2;
     padding: 5px;
@@ -86,7 +89,7 @@
 }
 
 //button for news
-.button__news {
+.button--news {
     grid-column: 1/2;
     grid-row: 2/3;
     padding: 5px;
@@ -99,14 +102,14 @@
 }
 
 //button for news
-.button__order {
+.button--order {
     grid-column: 1/2;
     grid-row: 3/4;
     padding: 5px;
 }
 
-//placment for the rextmonial text
-.testmonial__text {
+//placment for the textmonial text
+.para--testmonial {
     grid-column: 1/2;
     grid-row: 4/5;
     padding: 30px;
@@ -114,7 +117,7 @@
 }
 
 //placment for the textmonial names
-.testmonial__name {
+.para--testmonialNames {
     grid-column: 2/3;
     justify-self: center;
 }
