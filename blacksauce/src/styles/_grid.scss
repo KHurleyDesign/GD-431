@@ -26,7 +26,11 @@
     }
 }
 
-.grid--socialMedia {}
+//general grid for the social media
+.grid--socialMedia {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
 //placement of the logo in the header
 
@@ -122,7 +126,21 @@
     justify-self: center;
 }
 
+
 //making the label flexbox
 .labelGrid {
     display: flex;
+}
+
+//
+.facebookIcon {
+    grid-column: 1/2;
+}
+
+.instagramIcon {
+    grid-column: 2/3;
+}
+
+.twitterIcon {
+    grid-column: 3/4;
 }

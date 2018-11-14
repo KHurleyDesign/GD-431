@@ -421,6 +421,13 @@ template {
   margin-top: 1em;
 }
 
+.grid--socialMedia {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
 .logo_nav {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -554,6 +561,29 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.facebookIcon {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.instagramIcon {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.twitterIcon {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+.iconResize {
+  width: 50%;
+  margin: auto;
 }
 
 h1,
