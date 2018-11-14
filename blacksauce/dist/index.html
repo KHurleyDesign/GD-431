@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/styles/styles.css">
+    <script src="nav.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <title>Blacksauce Homepage</title>
 </head>
@@ -14,10 +15,25 @@
 
 <body>
 
-<div class="grid--nav u-black u-marginNone">
-<img class="logo_nav" src="logo.png" alt="blacksauce logo">
-    <p class="menu_button u-white u-marginNone"> Menu</p>
-</div>
+<div class="nav_grid u-black u-marginNone">
+<img class="logo_nav" src="" alt="blacksauce logo">
+
+<nav class="wrapper site-nav">
+		<button id="js-nav-trigger" aria-controls="js-site-nav" aria-expanded="false" class="u-button-reset site-nav__trigger">
+			<span aria-hidden="true" class="menu-icon">
+				 <div class="menu-icon__line"></div>
+				 <div class="menu-icon__line"></div>
+				 <div class="menu-icon__line"></div>
+			</span>
+			Menu
+		</button>
+		<ul id="js-site-nav" class="u-list-reset site-nav__list" aria-hidden="false" data-visible="false">
+			<li class="site-nav__list-item"><a href="#" class="u-block site-nav__link">Link 1</a></li>
+			<li class="site-nav__list-item"><a href="#" class="u-block site-nav__link">Link 2</a></li>
+			<li class="site-nav__list-item"><a href="#" class="u-block site-nav__link">Link 3</a></li>
+		</ul>
+  
+  </div>
 
 <div class="container">
     <div class="u-transparentBlack "> 
