@@ -622,12 +622,6 @@ template {
       justify-self: center;
 }
 
-.labelGrid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .facebookIcon {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -671,7 +665,7 @@ p {
 
 @media only screen and (min-width: 800px) {
   p {
-    font-size: 150%;
+    font-size: 125%;
   }
 }
 
