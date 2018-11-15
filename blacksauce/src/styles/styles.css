@@ -391,10 +391,29 @@ template {
   width: 50%;
 }
 
-.container {
-  background-image: url(../images/coverPhoto.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+.grid--socialMedia {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.facebookIcon {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.instagramIcon {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.twitterIcon {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
 }
 
 .grid--nav {
@@ -404,6 +423,33 @@ template {
       grid-template-columns: 2fr 2fr 3fr;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
+}
+
+.logo_nav {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  margin-left: 15px;
+  width: 100%;
+}
+
+.menu_button {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  text-align: center;
+}
+
+.container {
+  background-image: url(../images/coverPhoto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .grid--page {
@@ -431,34 +477,6 @@ template {
     -ms-grid-rows: 3fr 1fr;
         grid-template-rows: 3fr 1fr;
   }
-}
-
-.grid--socialMedia {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-}
-
-.logo_nav {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  margin-left: 15px;
-  width: 100%;
-}
-
-.menu_button {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/4;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  text-align: center;
 }
 
 .intro__heading-text {
@@ -620,24 +638,6 @@ template {
   grid-column: 2/3;
   -ms-grid-column-align: center;
       justify-self: center;
-}
-
-.facebookIcon {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-}
-
-.instagramIcon {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-}
-
-.twitterIcon {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/4;
 }
 
 .iconResize {
