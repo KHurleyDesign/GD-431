@@ -428,6 +428,8 @@ template {
         grid-template-columns: 2fr 2fr 2fr;
     grid-column-gap: 1em;
     margin-bottom: 1em;
+    -ms-grid-rows: 3fr 1fr;
+        grid-template-rows: 3fr 1fr;
   }
 }
 
@@ -510,6 +512,14 @@ template {
   padding: 5px;
 }
 
+@media only screen and (min-width: 800px) {
+  .button--catering {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+}
+
 .newsImage {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -546,9 +556,9 @@ template {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
-    -ms-grid-row: 1;
+    -ms-grid-row: 2;
     -ms-grid-row-span: 1;
-    grid-row: 1/2;
+    grid-row: 2/3;
   }
 }
 
@@ -588,9 +598,9 @@ template {
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3/4;
-    -ms-grid-row: 1;
+    -ms-grid-row: 2;
     -ms-grid-row-span: 1;
-    grid-row: 1/2;
+    grid-row: 2/3;
   }
 }
 
