@@ -617,10 +617,6 @@ p {
   padding-top: 5%;
 }
 
-input[type=text] {
-  width: 50%;
-}
-
 label {
   color: white;
   display: block;
@@ -643,7 +639,6 @@ input[type=reset] {
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  width: 50%;
 }
 
 footer form .formBoxGrid {
@@ -658,5 +653,9 @@ footer form .formBoxGrid .formBoxPosition {
           flex: 1 0 auto;
   margin-left: 1em;
   margin-bottom: 1em;
+}
+
+textarea#styled {
+  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,12 +1,9 @@
-input[type=text] {
-    width: 50%;
-}
-
 label {
     color: white;
     display: block;
     font-family: 'Open Sans',
         sans-serif;
+
 }
 
 input[type=button],
@@ -27,7 +24,6 @@ input[type=reset] {
     text-align: center;
     text-decoration: none;
 
-    width: 50%
 }
 
 footer form {
@@ -40,4 +36,8 @@ footer form {
             margin-bottom: 1em;
         }
     }
+}
+
+textarea#styled {
+    width: 100%;
 }
