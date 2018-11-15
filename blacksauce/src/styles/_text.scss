@@ -3,7 +3,28 @@ h2,
 p {
     font-family: 'Open Sans',
         sans-serif;
+
 }
+
+h1 {
+    @media only screen and (min-width: 800px) {
+        font-size: 4em;
+    }
+}
+
+h2 {
+
+    @media only screen and (min-width: 800px) {
+        font-size: 2em;
+    }
+}
+
+p {
+    @media only screen and (min-width: 800px) {
+        font-size: 150%;
+    }
+}
+
 
 
 .textColor__white {

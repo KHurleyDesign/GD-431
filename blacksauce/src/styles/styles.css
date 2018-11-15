@@ -657,6 +657,24 @@ p {
   font-family: 'Open Sans', sans-serif;
 }
 
+@media only screen and (min-width: 800px) {
+  h1 {
+    font-size: 4em;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  h2 {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  p {
+    font-size: 150%;
+  }
+}
+
 .textColor__white {
   color: white;
 }
