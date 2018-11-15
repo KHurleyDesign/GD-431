@@ -24,6 +24,14 @@
     img {
         margin-top: 1em;
     }
+
+    @media only screen and (min-width: 800px) {
+        dispay: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-column-gap: 1em;
+        margin-bottom: 1em;
+
+    }
 }
 
 //general grid for the social media
@@ -68,7 +76,7 @@
     margin: none;
     padding: 5px;
     position: absolute;
-
+    display: inline-block;
 }
 
 //placment for background image for cateringbutton
@@ -90,6 +98,11 @@
     grid-column: 1/2;
     grid-row: 2/3;
     width: 100%;
+
+    @media only screen and (min-width: 800px) {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
 }
 
 //button for news
@@ -97,12 +110,22 @@
     grid-column: 1/2;
     grid-row: 2/3;
     padding: 5px;
+
+    @media only screen and (min-width: 800px) {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
 }
 
 .orderImage {
     grid-column: 1/2;
     grid-row: 3/4;
     width: 100%;
+
+    @media only screen and (min-width: 800px) {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
 }
 
 //button for news
@@ -110,6 +133,11 @@
     grid-column: 1/2;
     grid-row: 3/4;
     padding: 5px;
+
+    @media only screen and (min-width: 800px) {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
 }
 
 //placment for the textmonial text
@@ -132,7 +160,7 @@
     display: flex;
 }
 
-//
+//icons for social media
 .facebookIcon {
     grid-column: 1/2;
 }
