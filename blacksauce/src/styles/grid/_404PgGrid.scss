@@ -1,0 +1,25 @@
+.grid--404Pg {
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: 5fr 5fr 5fr;
+}
+
+.img--404 {
+    grid-column: 1/2;
+    width: 50%;
+}
+
+.h--404 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.para--404 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.button--home {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
