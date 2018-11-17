@@ -369,26 +369,16 @@ template {
   padding: 5%;
 }
 
-.button {
+a {
   background-color: #F28705;
-  border: none;
   border-radius: 25px;
   color: black;
-  cursor: pointer;
-  display: inline-block;
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  padding: 15px 32px;
-  margin: 4px 2px;
-  text-align: center;
   text-decoration: none;
 }
 
-.homePhotoButton {
-  height: 50%;
-  position: relative;
-  text-align: center;
-  width: 50%;
+a:hover {
+  text-decoration: underline;
 }
 
 .grid--404Pg {
@@ -616,7 +606,7 @@ template {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  padding: 5px;
+  padding: 2em;
 }
 
 @media only screen and (min-width: 800px) {
@@ -655,7 +645,7 @@ template {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  padding: 5px;
+  padding: 2em;
 }
 
 @media only screen and (min-width: 800px) {
@@ -697,7 +687,7 @@ template {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
-  padding: 5px;
+  padding: 2em;
 }
 
 @media only screen and (min-width: 800px) {

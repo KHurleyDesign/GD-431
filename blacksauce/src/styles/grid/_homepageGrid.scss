@@ -62,7 +62,7 @@
 .button--catering {
     grid-column: 1/2;
     grid-row: 1/2;
-    padding: 5px;
+    padding: 2em;
 
     @media only screen and (min-width: 800px) {
         grid-row: 2/3;
@@ -85,7 +85,7 @@
 .button--news {
     grid-column: 1/2;
     grid-row: 2/3;
-    padding: 5px;
+    padding: 2em;
 
     @media only screen and (min-width: 800px) {
         grid-column: 2/3;
@@ -108,7 +108,7 @@
 .button--order {
     grid-column: 1/2;
     grid-row: 3/4;
-    padding: 5px;
+    padding: 2em;
 
     @media only screen and (min-width: 800px) {
         grid-column: 3/4;
