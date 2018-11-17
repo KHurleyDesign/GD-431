@@ -15,8 +15,8 @@ $display-nav: 520px;
 
     &__trigger {
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 1em;
+        right: 1em;
 
         &[aria-expanded="true"] {
             .menu-icon__line {
@@ -104,37 +104,12 @@ $display-nav: 520px;
 
 .menu-icon {
     &__line {
-        background-color: #444;
+        background-color: #F28705;
         height: 2px;
         margin: 8px auto;
         transition: all 0.3s ease-in-out;
         width: 42px;
     }
-}
-
-// NOTE: Normally, utility classes and base styles should go first
-// Here, I'm adding them out of order to make the relevant CSS easier to access for the demo
-// In a real project, don't do it this way :)
-
-// Utility classes
-.u-block {
-    display: block;
-}
-
-.u-button-reset {
-    background: transparent;
-    border: 0;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    padding: 0;
-    text-align: inherit;
-}
-
-.u-list-reset {
-    list-style: none;
-    padding-left: 0;
 }
 
 // Base styles

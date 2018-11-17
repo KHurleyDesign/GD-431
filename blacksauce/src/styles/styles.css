@@ -365,6 +365,26 @@ template {
   margin: 0;
 }
 
+.u-block {
+  display: block;
+}
+
+.u-button-reset {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  padding: 0;
+  text-align: inherit;
+}
+
+.u-list-reset {
+  list-style: none;
+  padding-left: 0;
+}
+
 .footerPadding {
   padding: 5%;
 }
@@ -834,8 +854,8 @@ textarea#styled {
 
 .site-nav__trigger {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 1em;
+  right: 1em;
 }
 
 .site-nav__trigger[aria-expanded="true"] .menu-icon__line:nth-child(1) {
@@ -947,32 +967,12 @@ textarea#styled {
 }
 
 .menu-icon__line {
-  background-color: #444;
+  background-color: #F28705;
   height: 2px;
   margin: 8px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   width: 42px;
-}
-
-.u-block {
-  display: block;
-}
-
-.u-button-reset {
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  padding: 0;
-  text-align: inherit;
-}
-
-.u-list-reset {
-  list-style: none;
-  padding-left: 0;
 }
 
 html {
