@@ -4,28 +4,6 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-// //grid for footer desktopview
-// .grid--desktop {
-
-//     @media only screen and (min-width: 800px) {
-//         display: grid;
-//         grid-tempalte-columns: 1fr 1fr 1fr;
-//         grid-template-rows: 1fr 1fr 1fr;
-//     }
-
-// }
-
-// // placment for "Get in touch" desktop
-// .footerHeading--desktop {
-//     grid-column: 1/2;
-//     grid-row: 1/2;
-// }
-
-// .footerPara--desktop {
-//     grid-column: 3/4;
-//     grid-row: 1/4;
-// }
-
 //icons for social media
 .facebookIcon {
     grid-column: 1/2;
@@ -37,4 +15,47 @@
 
 .twitterIcon {
     grid-column: 3/4;
+}
+
+@media screen and (min-width:800px) {
+
+    // at the designated media query, change the display of the footer into a grid with two columns and three rows
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+
+        // you may want to modify the first and end rows to be specific heights and then can change the middle row to 1fr of what remains, but this gets us close enough for demo purposes
+        h2,
+        form {
+            grid-column: 1/2;
+            // header and form should be in the first column
+        }
+
+        form {
+            grid-row: 2 / span 2;
+
+            // form should start in the second row and span 2 rows
+            input[type=submit] {
+                // comment out this line to see what your current height setting looks like
+                // I might recommend, instead of a default height: 50% that, instead, you only apply that specifically to buttons inside your homepage grid (which may be updated eventually, anyway, b/c I know you're going to change those from button elements)
+                // longest comment ever. sorry!
+                height: auto;
+            }
+        }
+
+        >p,
+        >section {
+            // the paragraph and the social media stuff should be in the 2nd column
+            grid-column: 2/3;
+        }
+
+        >p {
+            // paragraph should start in row one and span 2
+            grid-row: 1 / span 2;
+        }
+
+        // the social media stuff automatically goes into the third row, so we don't need to do anything for that!
+    }
 }

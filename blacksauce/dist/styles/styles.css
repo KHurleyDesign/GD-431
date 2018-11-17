@@ -459,6 +459,43 @@ template {
   grid-column: 3/4;
 }
 
+@media screen and (min-width: 800px) {
+  footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1fr;
+    -ms-grid-rows: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+  }
+  footer h2,
+  footer form {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  footer form {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2 / span 2;
+  }
+  footer form input[type=submit] {
+    height: auto;
+  }
+  footer > p,
+  footer > section {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  footer > p {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / span 2;
+  }
+}
+
 .grid--nav {
   display: -ms-grid;
   display: grid;
@@ -737,22 +774,46 @@ p {
   padding-top: 5%;
 }
 
+.u-marginNone {
+  margin: 0;
+}
+
+.u-black {
+  background-color: black;
+}
+
+.u-white {
+  color: white;
+}
+
+.u-brandOrange {
+  color: #F28705;
+}
+
+.para--leading {
+  line-height: 150%;
+}
+
+.footerPadding {
+  padding: 5%;
+}
+
 label {
   color: white;
   display: block;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-input[type=button],
-input[type=submit],
-input[type=reset] {
-  background-color: #F28705;
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  background-color: #f28705;
   border: none;
   border-radius: 25px;
   color: black;
   cursor: pointer;
   display: inline-block;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   height: 50%;
   margin: 4px 2px;

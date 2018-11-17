@@ -1,29 +1,49 @@
+.u-marginNone {
+    margin: 0;
+}
+
+.u-black {
+    background-color: black;
+}
+
+.u-white {
+    color: white;
+}
+
+.u-brandOrange {
+    color: #F28705;
+}
+
+.para--leading {
+    line-height: 150%;
+}
+
+.footerPadding {
+    padding: 5%;
+}
+
 label {
     color: white;
     display: block;
-    font-family: 'Open Sans',
-        sans-serif;
-
+    font-family: "Open Sans", sans-serif;
 }
 
-input[type=button],
-input[type=submit],
-input[type=reset] {
-    background-color: #F28705;
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    background-color: #f28705;
     border: none;
     border-radius: 25px;
     color: black;
     cursor: pointer;
     display: inline-block;
-    font-family: 'Open Sans',
-        sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 16px;
     height: 50%;
     margin: 4px 2px;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-
 }
 
 footer form {
