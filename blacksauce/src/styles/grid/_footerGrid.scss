@@ -24,9 +24,8 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 1em;
-        grid-template-rows: 1fr 2fr 1fr 1fr;
+        grid-template-rows: 3em 2fr 1fr;
 
-        // you may want to modify the first and end rows to be specific heights and then can change the middle row to 1fr of what remains, but this gets us close enough for demo purposes
         h2,
         form {
             grid-column: 1/2;
@@ -47,19 +46,20 @@
 
         >p,
         >section {
-            // the paragraph and the social media stuff should be in the 2nd column
+
             grid-column: 2/3;
         }
 
         >p {
-            // paragraph should start in row one and span 2
+
             grid-row: 2 / span 2;
+            margin: 0;
         }
 
     }
 
     .desktop-Social {
         grid-column: 1/2;
-        grid-row: 4/5;
+        grid-row: 3/4;
     }
 }
