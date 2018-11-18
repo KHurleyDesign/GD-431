@@ -45,7 +45,8 @@ $display-nav: 520px;
     &__list {
 
         @media screen and (max-width: ($display-nav - 1px)) {
-            background-color: rgba(#444, 0.75);
+            // background-color: rgba(rgb(0, 0, 0), 0.75);
+            background-color: black; // @feedback I am trying to make the background of the links solid black or at least not do the funky thing in which my text is takes presedent visually over the links (the background seems to only cover the image not the text). Also there is the corner of that one button that is so much brighter then the rest and I am fairly confused by that.
             flex-direction: column;
             height: 0;
             position: absolute;
@@ -77,10 +78,14 @@ $display-nav: 520px;
     }
 
     &__link {
-        opacity: 0.85;
+        background: none;
+        color: white;
+
 
         &:hover {
             opacity: 1;
+            text-decoration-color: #F28705;
+
         }
 
         @media screen and (max-width: ($display-nav - 1px)) {
