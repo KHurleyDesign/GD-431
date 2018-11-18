@@ -394,6 +394,7 @@ a {
   border-radius: 25px;
   color: black;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -743,6 +744,10 @@ p {
   font-family: 'Open Sans', sans-serif;
 }
 
+h1 {
+  color: #F28705;
+}
+
 @media only screen and (min-width: 800px) {
   h1 {
     font-size: 4em;
@@ -753,6 +758,10 @@ p {
   h2 {
     font-size: 2em;
   }
+}
+
+p {
+  line-height: 150%;
 }
 
 @media only screen and (min-width: 800px) {
@@ -774,10 +783,6 @@ p {
   border-radius: 25px;
   padding-left: 2%;
   width: 200px;
-}
-
-.para--leading {
-  line-height: 150%;
 }
 
 .para--testmonialSource {
@@ -986,9 +991,5 @@ html {
 body {
   margin: 0;
   position: relative;
-}
-
-body {
-  background: black;
 }
 /*# sourceMappingURL=styles.css.map */
