@@ -6,7 +6,8 @@
 
 .img--404 {
     grid-column: 1/2;
-    width: 50%;
+    grid-row: 1 / span 3;
+    width: 100%;
 }
 
 .h--404 {

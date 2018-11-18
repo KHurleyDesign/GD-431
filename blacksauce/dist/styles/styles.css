@@ -414,7 +414,10 @@ a:hover {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
-  width: 50%;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / span 3;
+  width: 100%;
 }
 
 .h--404 {
@@ -983,5 +986,9 @@ html {
 body {
   margin: 0;
   position: relative;
+}
+
+body {
+  background: black;
 }
 /*# sourceMappingURL=styles.css.map */
