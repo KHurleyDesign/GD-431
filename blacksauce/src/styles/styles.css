@@ -770,19 +770,8 @@ p {
   }
 }
 
-.textColor__white {
-  color: white;
-}
-
 .background__orange {
   background-color: #F28705;
-}
-
-.background__black {
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 25px;
-  padding-left: 2%;
-  width: 200px;
 }
 
 .para--testmonialSource {
