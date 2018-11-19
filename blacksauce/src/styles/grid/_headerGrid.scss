@@ -2,7 +2,7 @@
 .grid--nav {
     display: grid;
     grid-template-columns: 2fr 2fr 3fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 
@@ -10,7 +10,7 @@
 
 .logo_nav {
     grid-column: 1/2;
-    grid-row: 2/3;
-    margin-left: 15px;
+    grid-row: 1/2;
+    padding: 15%;
     width: 100%;
 }

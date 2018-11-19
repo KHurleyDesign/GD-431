@@ -403,6 +403,7 @@ a:hover {
 }
 
 .grid--404Pg {
+  background-color: black;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 5fr 5fr;
@@ -446,6 +447,9 @@ a:hover {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
+  width: 25%;
+  height: 25%;
+  text-align: center;
 }
 
 .grid--socialMedia {
@@ -524,18 +528,18 @@ a:hover {
   display: grid;
   -ms-grid-columns: 2fr 2fr 3fr;
       grid-template-columns: 2fr 2fr 3fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
 }
 
 .logo_nav {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
   -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  margin-left: 15px;
+  grid-row: 1/2;
+  padding: 15%;
   width: 100%;
 }
 
