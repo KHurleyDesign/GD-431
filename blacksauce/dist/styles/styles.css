@@ -406,10 +406,19 @@ a:hover {
   background-color: black;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 5fr 5fr;
-      grid-template-columns: 5fr 5fr;
+  -ms-grid-columns: 5fr 4fr;
+      grid-template-columns: 5fr 4fr;
   -ms-grid-rows: 5fr 5fr 5fr;
       grid-template-rows: 5fr 5fr 5fr;
+}
+
+@media only screen and (max-width: 800px) {
+  .grid--404Pg {
+    -ms-grid-columns: 5fr;
+        grid-template-columns: 5fr;
+    -ms-grid-rows: 3fr 1fr 1fr 1fr;
+        grid-template-rows: 3fr 1fr 1fr 1fr;
+  }
 }
 
 .img--404 {
@@ -420,6 +429,19 @@ a:hover {
   -ms-grid-row-span: 3;
   grid-row: 1 / span 3;
   width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+@media only screen and (max-width: 800px) {
+  .img--404 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
 }
 
 .h--404 {
@@ -431,6 +453,20 @@ a:hover {
   grid-row: 1/2;
 }
 
+@media only screen and (max-width: 800px) {
+  .h--404 {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+}
+
 .para--404 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -438,6 +474,17 @@ a:hover {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
+}
+
+@media only screen and (max-width: 800px) {
+  .para--404 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+  }
 }
 
 .button--home {
@@ -450,6 +497,17 @@ a:hover {
   width: 25%;
   height: 25%;
   text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .button--home {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+  }
 }
 
 .grid--socialMedia {
@@ -566,7 +624,6 @@ a:hover {
 
 @media only screen and (min-width: 800px) {
   .grid--page {
-    dispay: grid;
     -ms-grid-columns: 2fr 2fr 2fr;
         grid-template-columns: 2fr 2fr 2fr;
     grid-column-gap: 1em;
