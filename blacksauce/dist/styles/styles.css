@@ -412,7 +412,7 @@ a:hover {
       grid-template-rows: 5fr 5fr 5fr;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
   .grid--404Pg {
     -ms-grid-columns: 5fr;
         grid-template-columns: 5fr;
@@ -433,7 +433,7 @@ a:hover {
      object-fit: fill;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
   .img--404 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
@@ -453,7 +453,7 @@ a:hover {
   grid-row: 1/2;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
   .h--404 {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -476,7 +476,7 @@ a:hover {
   grid-row: 2/3;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
   .para--404 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
@@ -499,7 +499,7 @@ a:hover {
   text-align: center;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
   .button--home {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
