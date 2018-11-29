@@ -1042,4 +1042,10 @@ body {
   margin: 0;
   position: relative;
 }
+
+.is-active {
+  opacity: 1;
+  -webkit-text-decoration-color: #F28705;
+          text-decoration-color: #F28705;
+}
 /*# sourceMappingURL=styles.css.map */
