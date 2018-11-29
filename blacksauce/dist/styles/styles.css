@@ -602,7 +602,7 @@ a:hover {
 }
 
 .container {
-  background-image: url(../images/coverPhoto.jpg);
+  background-image: url(/images/coverPhoto.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -902,8 +902,8 @@ textarea#styled {
 
 .site-nav__trigger {
   position: absolute;
-  top: 1em;
-  right: 1em;
+  top: 0.9em;
+  right: 0.9em;
 }
 
 .site-nav__trigger[aria-expanded="true"] .menu-icon__line:nth-child(1) {
@@ -939,6 +939,7 @@ textarea#styled {
     right: 0;
     left: 0;
     width: 100vw;
+    margin: 0;
   }
   .site-nav__list[data-visible="true"] {
     -webkit-animation: expand 0.3s ease-in-out forwards;
@@ -1020,10 +1021,14 @@ textarea#styled {
 .menu-icon__line {
   background-color: #F28705;
   height: 2px;
-  margin: 8px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   width: 42px;
+}
+
+.menu-icon__line:nth-of-type(even) {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 html {

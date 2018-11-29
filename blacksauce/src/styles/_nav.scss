@@ -15,10 +15,12 @@ $display-nav: 520px;
 
     &__trigger {
         position: absolute;
-        top: 1em;
-        right: 1em;
+        top: 0.9em;
+        right: 0.9em;
+
 
         &[aria-expanded="true"] {
+
             .menu-icon__line {
                 $yValue: 10px;
                 $deg: 45deg;
@@ -54,6 +56,7 @@ $display-nav: 520px;
             right: 0;
             left: 0;
             width: 100vw;
+            margin: 0;
 
             &[data-visible="true"] {
                 animation: expand 0.3s ease-in-out forwards; // see the expand animation below
@@ -111,7 +114,13 @@ $display-nav: 520px;
     &__line {
         background-color: #F28705;
         height: 2px;
-        margin: 8px auto;
+
+        &:nth-of-type(even) {
+            //  <-- add this to replace it
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
         transition: all 0.3s ease-in-out;
         width: 42px;
     }
