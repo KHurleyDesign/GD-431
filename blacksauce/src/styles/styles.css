@@ -571,7 +571,7 @@ a:hover {
     grid-row: 2 / span 2;
     margin: 0;
   }
-  .desktop-Social {
+  .desktop-social {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
