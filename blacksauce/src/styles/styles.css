@@ -385,7 +385,7 @@ template {
   padding-left: 0;
 }
 
-a {
+.u-button--styled {
   background-color: #F28705;
   border-radius: 25px;
   color: black;
@@ -394,8 +394,37 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+.u-button--styled a:hover {
   text-decoration: underline;
+}
+
+body {
+  background-color: black;
+}
+
+label {
+  color: white;
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 1em;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  background-color: #F28705;
+  border: none;
+  border-radius: 25px;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  height: 50%;
+  margin: 4px 2px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .grid--404Pg {
@@ -451,9 +480,10 @@ a:hover {
 
 @media only screen and (max-width: 600px) {
   .h--404 {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
@@ -562,10 +592,14 @@ a:hover {
 .grid--nav {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 2fr 3fr;
-      grid-template-columns: 2fr 2fr 3fr;
+  -ms-grid-columns: 400px 1fr;
+      grid-template-columns: 400px 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
+  min-height: 68px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo_nav {
@@ -943,6 +977,9 @@ textarea#styled {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -963,6 +1000,14 @@ textarea#styled {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (min-width: 520px) {
+  .site-nav__list-item {
+    -webkit-box-flex: unset;
+        -ms-flex: unset;
+            flex: unset;
   }
 }
 

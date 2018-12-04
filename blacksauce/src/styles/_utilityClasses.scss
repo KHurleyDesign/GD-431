@@ -50,3 +50,22 @@ $brandOrange :#F28705;
     list-style: none;
     padding-left: 0;
 }
+
+.u-button--styled {
+
+    background-color: $brandOrange;
+    border-radius: 25px;
+    color: black;
+    // cursor: pointer;
+    font-family: 'Open Sans',
+        sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    //ask about the hover for here
+}

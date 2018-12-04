@@ -1,6 +1,8 @@
 // Variables
 $display-nav: 520px;
 
+//above is for when the horizontal nav schould display (change for the silly point)
+
 // JS action classes
 [data-visible="false"] {
     display: none;
@@ -68,6 +70,7 @@ $display-nav: 520px;
 
         @media screen and (min-width: $display-nav) {
             display: flex;
+            justify-content: space-between;
         }
     }
 
@@ -78,6 +81,10 @@ $display-nav: 520px;
 
         @media screen and (max-width: ($display-nav - 1px)) {
             justify-content: center;
+        }
+
+        @media screen and (min-width: ($display-nav)) {
+            flex: unset;
         }
     }
 
