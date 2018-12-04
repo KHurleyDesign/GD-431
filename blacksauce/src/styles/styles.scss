@@ -1,9 +1,11 @@
 @import "libraries/normalize",
 "utilityClasses",
+"base",
 "grid/404PgGrid",
 "grid/footerGrid",
 "grid/headerGrid",
 "grid/homepageGrid",
+"footer",
 "images",
 "text",
 "forms",
@@ -13,5 +15,5 @@
 
 .is-active {
     opacity: 1;
-    text-decoration-color: #F28705;
+    text-decoration-color: $brandOrange;
 }

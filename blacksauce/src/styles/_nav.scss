@@ -48,7 +48,7 @@ $display-nav: 520px;
 
         @media screen and (max-width: ($display-nav - 1px)) {
             // background-color: rgba(rgb(0, 0, 0), 0.75);
-            background-color: black; // @feedback I am trying to make the background of the links solid black or at least not do the funky thing in which my text is takes presedent visually over the links (the background seems to only cover the image not the text). Also there is the corner of that one button that is so much brighter then the rest and I am fairly confused by that.
+            background-color: black;
             flex-direction: column;
             height: 0;
             position: absolute;
@@ -62,6 +62,7 @@ $display-nav: 520px;
                 animation: expand 0.3s ease-in-out forwards; // see the expand animation below
                 // this changes the height and opacity of the mobile menu
                 display: flex;
+                z-index: 90;
             }
         }
 
@@ -87,7 +88,7 @@ $display-nav: 520px;
 
         &:hover {
             opacity: 1;
-            text-decoration-color: #F28705;
+            text-decoration-color: $brandOrange;
 
         }
 
@@ -112,7 +113,7 @@ $display-nav: 520px;
 
 .menu-icon {
     &__line {
-        background-color: #F28705;
+        background-color: $brandOrange;
         height: 2px;
 
         &:nth-of-type(even) {

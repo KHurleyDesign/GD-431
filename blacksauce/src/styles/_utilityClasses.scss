@@ -1,5 +1,7 @@
+$brandOrange :#F28705;
+
 .u-brandOrange {
-    color: #F28705;
+    color: $brandOrange;
 }
 
 .u-fontWeightBold {
@@ -52,21 +54,3 @@
 .footerPadding {
     padding: 5%;
 }
-
-
-a {
-    background-color: #F28705;
-    border-radius: 25px;
-    color: black;
-    // cursor: pointer;
-    font-family: 'Open Sans',
-        sans-serif;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-// @ feedback I am having trouble organizing classes, is there a way that I should be organizing the partials that is better then the way that I am.

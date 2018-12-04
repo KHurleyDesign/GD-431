@@ -517,24 +517,6 @@ a:hover {
       grid-template-columns: 1fr 1fr 1fr;
 }
 
-.facebookIcon {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-}
-
-.instagramIcon {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-}
-
-.twitterIcon {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/4;
-}
-
 @media screen and (min-width: 800px) {
   footer {
     display: -ms-grid;
@@ -794,6 +776,10 @@ a:hover {
       justify-self: center;
 }
 
+.footerPadding {
+  padding: 5%;
+}
+
 .iconResize {
   width: 25%;
   margin: auto;
@@ -859,7 +845,7 @@ label {
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
-  background-color: #f28705;
+  background-color: #F28705;
   border: none;
   border-radius: 25px;
   color: black;
@@ -947,6 +933,7 @@ textarea#styled {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    z-index: 90;
   }
 }
 
