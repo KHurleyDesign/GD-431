@@ -579,7 +579,7 @@ a:hover {
   width: 100%;
 }
 
-.container {
+.background--imgHome {
   background-image: url(/images/coverPhoto.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -770,6 +770,11 @@ a:hover {
   grid-column: 2/3;
   -ms-grid-column-align: center;
       justify-self: center;
+}
+
+.background--imgCater {
+  background-image: url(/images/cateringImage.jpg);
+  background-size: cover;
 }
 
 .footerPadding {
