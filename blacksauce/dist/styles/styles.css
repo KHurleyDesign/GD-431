@@ -398,10 +398,6 @@ template {
   text-decoration: underline;
 }
 
-body {
-  background-color: black;
-}
-
 label {
   color: white;
   display: block;
@@ -813,6 +809,10 @@ input[type="reset"] {
 
 .footerPadding {
   padding: 5%;
+}
+
+.a__email {
+  color: #F28705;
 }
 
 .iconResize {
