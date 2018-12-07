@@ -423,6 +423,22 @@ input[type="reset"] {
   text-decoration: none;
 }
 
+::-webkit-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+}
+
+:-ms-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+}
+
+::-ms-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+}
+
+::placeholder {
+  font-family: "Open Sans", sans-serif;
+}
+
 .grid--404Pg {
   background-color: black;
   display: -ms-grid;
@@ -862,6 +878,10 @@ p {
   padding-top: 5%;
 }
 
+.background__404 {
+  background-color: black;
+}
+
 .para--leading {
   line-height: 150%;
 }
@@ -980,6 +1000,9 @@ textarea#styled {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

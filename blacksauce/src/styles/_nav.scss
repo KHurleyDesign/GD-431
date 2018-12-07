@@ -49,7 +49,6 @@ $display-nav: 520px;
     &__list {
 
         @media screen and (max-width: ($display-nav - 1px)) {
-            // background-color: rgba(rgb(0, 0, 0), 0.75);
             background-color: black;
             flex-direction: column;
             height: 0;
@@ -71,6 +70,11 @@ $display-nav: 520px;
         @media screen and (min-width: $display-nav) {
             display: flex;
             justify-content: space-between;
+            max-width: 700px;
+            //subject to change above
+            margin-left: auto;
+            margin-right: auto;
+
         }
     }
 

@@ -13,11 +13,11 @@
 
 
 
-<body>
-{% include "_header.html"%}
+<body {% if (title=="404" ) %} class="background__404" {% endif %}>
+    {% include "_header.html"%}
 
-{{ content | safe}}
-<script src="/js/nav.js"></script>
+    {{ content | safe}}
+    <script src="/js/nav.js"></script>
 </body>
 
 </html>
