@@ -389,7 +389,7 @@ template {
   background-color: #F28705;
   border-radius: 25px;
   color: black;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   text-decoration: none;
 }
@@ -823,7 +823,7 @@ input[type="reset"] {
 h1,
 h2,
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 h1 {

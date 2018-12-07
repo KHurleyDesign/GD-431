@@ -1,5 +1,8 @@
 $brandOrange :#F28705;
 
+$font-stack:"Open Sans",
+sans-serif;
+
 .u-brandOrange {
     color: $brandOrange;
 }
@@ -57,8 +60,7 @@ $brandOrange :#F28705;
     border-radius: 25px;
     color: black;
     // cursor: pointer;
-    font-family: 'Open Sans',
-        sans-serif;
+    font-family: $font-stack;
     font-weight: 700;
     text-decoration: none;
 
