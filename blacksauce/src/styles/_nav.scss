@@ -80,7 +80,7 @@ $display-nav: 520px;
             }
 
             @media screen and (max-width: 750px) {
-                max-width: 350px;
+                max-width: 300px;
             }
 
         }
@@ -103,7 +103,7 @@ $display-nav: 520px;
     &__link {
         background: none;
         color: white;
-
+        font-family: $font-stack;
 
         &:hover {
             opacity: 1;

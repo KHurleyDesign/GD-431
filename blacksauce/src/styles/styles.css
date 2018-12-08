@@ -604,8 +604,8 @@ input[type="reset"] {
 .grid--nav {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 30% 1fr;
-      grid-template-columns: 30% 1fr;
+  -ms-grid-columns: 15% 1fr;
+      grid-template-columns: 15% 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   min-height: 68px;
@@ -616,8 +616,8 @@ input[type="reset"] {
 
 @media screen and (max-width: 520px) {
   .grid--nav {
-    -ms-grid-columns: 60%;
-        grid-template-columns: 60%;
+    -ms-grid-columns: 50%;
+        grid-template-columns: 50%;
   }
 }
 
@@ -1021,7 +1021,7 @@ textarea#styled {
 
 @media screen and (min-width: 520px) and (max-width: 750px) {
   .site-nav__list {
-    max-width: 350px;
+    max-width: 300px;
   }
 }
 
@@ -1056,6 +1056,7 @@ textarea#styled {
 .site-nav__link {
   background: none;
   color: white;
+  font-family: "Open Sans", sans-serif;
 }
 
 .site-nav__link:hover {
