@@ -6,7 +6,7 @@
 .grid--cater {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10% 30% repeat(5, 1fr)
+    grid-template-rows: 10% 30% repeat(5, 1fr);
 }
 
 .h--cater {
@@ -19,9 +19,18 @@
     grid-column: 2/3;
     justify-content: center;
     text-align: center;
+
+    @media only screen and (max-width: 1500px) {
+        grid-column: 1 / span 3;
+    }
 }
 
 .form--name {
     grid-column: 1/2;
     grid-row: 3/4;
+}
+
+.form--email {
+    grid-column: 2/3;
+    grid-row: 7/8;
 }

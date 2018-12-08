@@ -875,6 +875,14 @@ textarea {
   text-align: center;
 }
 
+@media only screen and (max-width: 1500px) {
+  .p--caterDesc {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / span 3;
+  }
+}
+
 .form--name {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -882,6 +890,15 @@ textarea {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
+}
+
+.form--email {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 1;
+  grid-row: 7/8;
 }
 
 .footerPadding {
