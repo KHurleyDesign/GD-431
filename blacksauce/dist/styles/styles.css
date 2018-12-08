@@ -604,14 +604,21 @@ input[type="reset"] {
 .grid--nav {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 400px 1fr;
-      grid-template-columns: 400px 1fr;
+  -ms-grid-columns: 30% 1fr;
+      grid-template-columns: 30% 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   min-height: 68px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 520px) {
+  .grid--nav {
+    -ms-grid-columns: 60%;
+        grid-template-columns: 60%;
+  }
 }
 
 .logo_nav {
@@ -1003,6 +1010,18 @@ textarea#styled {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 520px) and (max-width: 1100px) {
+  .site-nav__list {
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 520px) and (max-width: 750px) {
+  .site-nav__list {
+    max-width: 350px;
   }
 }
 
