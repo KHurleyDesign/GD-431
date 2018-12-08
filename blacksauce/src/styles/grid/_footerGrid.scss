@@ -13,7 +13,7 @@
         grid-column-gap: 1em;
         grid-template-rows: 3em 2fr 1fr;
 
-        h2,
+        .h2--callToAction,
         form {
             grid-column: 1/2;
             // header and form should be in the first column
@@ -24,20 +24,19 @@
 
             // form should start in the second row and span 2 rows
             input[type=submit] {
-                // comment out this line to see what your current height setting looks like
-                // I might recommend, instead of a default height: 50% that, instead, you only apply that specifically to buttons inside your homepage grid (which may be updated eventually, anyway, b/c I know you're going to change those from button elements)
-                // longest comment ever. sorry!
+
                 height: auto;
             }
         }
 
-        >p,
+        >.p--contactInfo,
+
         >section {
 
             grid-column: 2/3;
         }
 
-        >p {
+        >.p--contactInfo {
 
             grid-row: 2 / span 2;
             margin: 0;

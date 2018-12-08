@@ -2,3 +2,26 @@
     background-image: url(/images/cateringImage.jpg);
     background-size: cover;
 }
+
+.grid--cater {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10% 30% repeat(5, 1fr)
+}
+
+.h--cater {
+    grid-column: 2/3;
+    justify-content: center;
+    text-align: center;
+}
+
+.p--caterDesc {
+    grid-column: 2/3;
+    justify-content: center;
+    text-align: center;
+}
+
+.form--name {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}

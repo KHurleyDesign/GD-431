@@ -26,3 +26,7 @@ input[type="reset"] {
 ::placeholder {
     font-family: $font-stack;
 }
+
+textarea {
+    width: 100%;
+}

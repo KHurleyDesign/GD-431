@@ -2,7 +2,7 @@
     line-height: 150%;
 }
 
-.footerPadding {
+.footer_padding {
     padding: 5%;
 }
 
@@ -42,9 +42,3 @@ footer form {
         }
     }
 }
-
-textarea#styled {
-    width: 100%;
-}
-
-//does not need the id, just apply it to text area. move to base scss
