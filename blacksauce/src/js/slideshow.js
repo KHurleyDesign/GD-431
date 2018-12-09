@@ -1,141 +1,33 @@
-// Slider init
-const slideshow = document.querySelector("#js-slideshow");
-const slides = slideshow.querySelectorAll(".js-slideshow-slide");
-var slideshowTimer;
+//used the javascript from this link
+// https: //www.w3schools.com/howto/tryit.asp?filename=tryhow_js_quotes_slideshow
 
-// Get screenreaders to announce slides if the slideshow has focus
-window.addEventListener("focusin", function () {
-    slideshow.setAttribute("aria-live", "polite");
-});
+var slideIndex = 1;
+showSlides(slideIndex);
 
-// But stop announcing when the slideshow doesn't have focus
-window.addEventListener("blur", function () {
-    slideshow.setAttribute("aria-live", "off");
-});
-
-// Lazy load images
-const fetchImage = url => {
-    return new Promise((resolve, reject) => {
-        const image = new Image();
-        image.src = url;
-        image.onload = resolve;
-        image.onerror = reject;
-    });
-};
-
-const loadImage = image => {
-    const src = image.dataset.src;
-    fetchImage(src).then(() => {
-        image.src = src;
-        image.classList.remove("js-lazy");
-        image.removeAttribute("data-src");
-    });
-};
-
-const revealImage = target => {
-    target.setAttribute("data-active", true);
-    const img = target.querySelector("img");
-    if (img.dataset.src) {
-        loadImage(img);
-    }
-};
-
-// Set up data state; first slide should be active, others not
-slides.forEach((slide, index) => {
-    if (index === 0) {
-        // slide.setAttribute("data-active", true);
-        revealImage(slide);
-    } else {
-        slide.setAttribute("data-active", false);
-    }
-});
-
-// Slider actions
-const slideshowButtons = slideshow.querySelectorAll(".js-slideshow-button");
-
-// Determine which slide is next up
-const updateSlide = direction => {
-    // Deprioritize the current slide
-    let currentSlide = document.querySelector(
-        ".js-slideshow-slide[data-active=true]"
-    );
-    currentSlide.setAttribute("data-active", false);
-
-    if (direction === "next") {
-        // Find the next slide
-        let nextSlide = currentSlide.nextElementSibling;
-
-        if (nextSlide !== null) {
-            // If we are not on the last slide
-            var target = nextSlide;
-        } else {
-            // If we are on the last slide
-            var target = slides[0];
-        }
-    }
-    if (direction === "previous") {
-        // Find the previous slide
-        let previousSlide = currentSlide.previousElementSibling;
-
-        if (previousSlide !== null) {
-            // If we are not on the first slide
-            var target = previousSlide;
-        } else {
-            // If we are on the first slide
-            var target = slides[slides.length - 1];
-        }
-    }
-
-    revealImage(target);
-};
-
-const startSlideshow = () => {
-    updateSlide("next");
-    slideshowTimer = setTimeout(startSlideshow, 5000);
-};
-
-const pauseSlideshow = () => {
-    clearTimeout(slideshowTimer);
-};
-
-startSlideshow();
-
-// Create eventListener for clicking on the buttons
-for (let i = 0; i < slideshowButtons.length; i++) {
-    slideshowButtons[i].addEventListener("click", function (e) {
-        let action = this.dataset.action;
-        // console.log(action);
-
-        if (action === "pause") {
-            pauseSlideshow();
-            this.setAttribute("aria-label", "play");
-            this.dataset.action = "play";
-        } else if (action === "play") {
-            startSlideshow();
-            this.setAttribute("aria-label", "pause");
-            this.dataset.action = "pause";
-        } else {
-            updateSlide(action);
-        }
-    });
+function plusSlides(n) {
+    showSlides(slideIndex += n);
 }
 
-// Create eventListener for clicking on the buttons
-for (let i = 0; i < slideshowButtons.length; i++) {
-    slideshowButtons[i].addEventListener("click", function (e) {
-        let action = this.dataset.action;
-        // console.log(action);
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
 
-        if (action === "pause") {
-            pauseSlideshow();
-            this.setAttribute("aria-label", "play");
-            this.dataset.action = "play";
-        } else if (action === "play") {
-            startSlideshow();
-            this.setAttribute("aria-label", "pause");
-            this.dataset.action = "pause";
-        } else {
-            updateSlide(action);
-        }
-    });
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
 }
