@@ -3,3 +3,24 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.grid--menuPage {
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+}
+
+.p--formalDinners {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.ul--formalDinners {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.img--formalDinners {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 50%;
+}

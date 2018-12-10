@@ -479,6 +479,10 @@ q {
   font-family: "Open Sans", sans-serif;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .grid--404Pg {
   background-color: black;
   display: -ms-grid;
@@ -864,6 +868,13 @@ q {
   background-size: cover;
 }
 
+.grid--menuPage {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5fr 5fr;
+      grid-template-columns: 5fr 5fr;
+}
+
 .background--imgCater {
   background-image: url(/images/cateringImage.jpg);
   background-size: cover;
@@ -1170,6 +1181,11 @@ html {
 body {
   margin: 0;
   position: relative;
+}
+
+.p--menuType {
+  color: #F28705;
+  font-size: 2em;
 }
 
 * {
