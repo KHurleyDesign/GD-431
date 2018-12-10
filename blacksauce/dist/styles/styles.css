@@ -481,6 +481,8 @@ q {
 
 ul {
   list-style-type: none;
+  font-family: "Open Sans", sans-serif;
+  line-height: 200%;
 }
 
 .grid--404Pg {
@@ -873,6 +875,98 @@ ul {
   display: grid;
   -ms-grid-columns: 5fr 5fr;
       grid-template-columns: 5fr 5fr;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+}
+
+.p--formalDinners {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.ul--formalDinners {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  padding-top: 10%;
+}
+
+.img--formalDinners {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  width: 50%;
+  place-self: center;
+}
+
+.p--informalDinners {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.ul--informalDinners {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  padding-top: 10%;
+}
+
+.img--informalDinners {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  width: 50%;
+  place-self: center;
+}
+
+.p--boxedLunches {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.ul--boxedLunches {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  padding-top: 10%;
+}
+
+.img--boxedLunches {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  width: 50%;
+  place-self: center;
 }
 
 .background--imgCater {
@@ -1186,6 +1280,13 @@ body {
 .p--menuType {
   color: #F28705;
   font-size: 2em;
+  font-weight: 700;
+  padding-left: 6%;
+}
+
+li.p--menuSubhead {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
 }
 
 * {
