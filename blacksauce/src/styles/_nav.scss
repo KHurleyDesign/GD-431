@@ -146,18 +146,7 @@ $display-nav: 520px;
     }
 }
 
-// Base styles
-html {
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
-body {
-    margin: 0;
-    position: relative;
+.is-active {
+    opacity: 1;
+    text-decoration-color: $brandOrange;
 }

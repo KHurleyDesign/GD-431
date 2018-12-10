@@ -485,6 +485,23 @@ ul {
   line-height: 200%;
 }
 
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  position: relative;
+}
+
 .grid--404Pg {
   background-color: black;
   display: -ms-grid;
@@ -905,7 +922,7 @@ ul {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  width: 50%;
+  width: 85%;
   place-self: center;
 }
 
@@ -935,7 +952,7 @@ ul {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  width: 50%;
+  width: 85%;
   place-self: center;
 }
 
@@ -965,7 +982,7 @@ ul {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
-  width: 50%;
+  width: 85%;
   place-self: center;
 }
 
@@ -1260,21 +1277,10 @@ footer form .formBoxGrid .formBoxPosition {
   margin-bottom: 8px;
 }
 
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-  position: relative;
+.is-active {
+  opacity: 1;
+  -webkit-text-decoration-color: #F28705;
+          text-decoration-color: #F28705;
 }
 
 .p--menuType {
@@ -1367,11 +1373,5 @@ li.p--menuSubhead {
 
 .para--testmonialNames {
   color: #F28705;
-}
-
-.is-active {
-  opacity: 1;
-  -webkit-text-decoration-color: #F28705;
-          text-decoration-color: #F28705;
 }
 /*# sourceMappingURL=styles.css.map */
