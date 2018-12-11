@@ -6,7 +6,7 @@
 .grid--cater {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10% 30% repeat(5, 1fr);
+    grid-template-rows: 10% 30%;
 }
 
 .h--cater {
@@ -25,12 +25,75 @@
     }
 }
 
+form.form--grid {
+    display: grid;
+    grid-template-columns: 15em 15em 15em;
+    grid-column-gap: 2em;
+    grid-template-rows: repeat(5, 5em);
+    grid-row-gap: 3em;
+}
+
 .form--name {
     grid-column: 1/2;
-    grid-row: 3/4;
+    grid-row: 1/2;
 }
 
 .form--email {
     grid-column: 2/3;
-    grid-row: 7/8;
+    grid-row: 1/2;
+}
+
+.form--phone {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.form--addressOne {
+    grid-column: 1 / span 3;
+    grid-row: 2/3;
+}
+
+.form--addressTwo {
+    grid-column: 1 / span 3;
+    grid-row: 3/4;
+}
+
+.form--city {
+    grid-column: 1;
+    grid-row: 4/5;
+}
+
+.form--state {
+    grid-column: 2;
+    grid-row: 4/5;
+}
+
+.form--zipCode {
+    grid-column: 3;
+    grid-row: 4/5;
+}
+
+.form--eventDate {
+    grid-column: 1;
+    grid-row: 5/6;
+}
+
+.form--time {
+    grid-column: 2;
+    grid-row: 5/6;
+}
+
+.form--guestCount {
+    grid-column: 3;
+    grid-row: 5/6;
+}
+
+.form--budget {
+    grid-column: 1;
+    grid-row: 6/7;
+}
+
+.form--eventType {
+    grid-column: 2;
+    grid-row: 6/7;
 }
