@@ -14,8 +14,8 @@
 .img--404 {
     grid-column: 1/2;
     grid-row: 1 / span 3;
-    width: 100%;
     object-fit: fill;
+    width: 100%;
 
     @media only screen and (max-width: 1000px) {
         grid-column: 1/2;
@@ -31,10 +31,10 @@
     grid-row: 1/2;
 
     @media only screen and (max-width: 1000px) {
-        justify-content: center;
-        text-align: center;
         grid-column: 1/2;
         grid-row: 2/3;
+        text-align: center;
+        justify-content: center;
     }
 }
 
@@ -45,17 +45,17 @@
     @media only screen and (max-width: 1000px) {
         grid-column: 1/2;
         grid-row: 3/4;
-        justify-content: center;
         text-align: center;
+        justify-content: center;
     }
 }
 
 .button--home {
     grid-column: 2/3;
     grid-row: 3/4;
-    width: 25%;
     height: 25%;
     text-align: center;
+    width: 25%;
 
     @media only screen and (max-width: 1000px) {
         grid-column: 1/2;

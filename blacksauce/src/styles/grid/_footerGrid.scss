@@ -6,7 +6,6 @@
 
 @media screen and (min-width:800px) {
 
-    // at the designated media query, change the display of the footer into a grid with two columns and three rows
     footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -16,13 +15,11 @@
         .h2--callToAction,
         form {
             grid-column: 1/2;
-            // header and form should be in the first column
         }
 
         form {
             grid-row: 2 / span 2;
 
-            // form should start in the second row and span 2 rows
             input[type=submit] {
 
                 height: auto;
