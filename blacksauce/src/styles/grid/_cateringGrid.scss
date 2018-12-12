@@ -6,7 +6,7 @@
 .grid--cater {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10% 30%;
+    grid-template-rows: 5em 15em 50em;
 }
 
 .h--cater {
@@ -25,75 +25,154 @@
     }
 }
 
+.form--placement {
+    grid-column: 1 span / 3;
+    grid-row: 3/4;
+
+}
+
 form.form--grid {
     display: grid;
     grid-template-columns: 15em 15em 15em;
     grid-column-gap: 2em;
-    grid-template-rows: repeat(5, 5em);
+    grid-template-rows: repeat(6, 5em);
     grid-row-gap: 3em;
+
+    @media only screen and (max-width:850px) {
+        grid-template-columns: 15em;
+    }
 }
 
 .form--name {
     grid-column: 1/2;
     grid-row: 1/2;
+
+    @media only screen and (max-width: 850px) {
+        grid-column: 1/2;
+    }
 }
 
 .form--email {
     grid-column: 2/3;
     grid-row: 1/2;
+    
+    @media only screen and (max-width: 850px) {
+        grid-column: 1/2;
+    }
 }
 
 .form--phone {
     grid-column: 3/4;
     grid-row: 1/2;
+    
+    @media only screen and (max-width: 850px) {
+        grid-column: 1/2;
+    }
 }
 
 .form--addressOne {
     grid-column: 1 / span 3;
     grid-row: 2/3;
+    
+    @media only screen and (max-width: 850px) {
+        grid-column: 1/2;
+    }
 }
 
 .form--addressTwo {
     grid-column: 1 / span 3;
     grid-row: 3/4;
+    
+    @media only screen and (max-width: 850px) {
+        grid-column: 1/2;
+    }
 }
 
 .form--city {
     grid-column: 1;
     grid-row: 4/5;
+    
+    @media only screen and (max-width: 850px) {
+        grid-column: 1/2;
+    }
 }
 
 .form--state {
     grid-column: 2;
     grid-row: 4/5;
+    
+    @media only screen and (max-width: 850px) {
+        grid-column: 1/2;
+    }
 }
 
 .form--zipCode {
     grid-column: 3;
     grid-row: 4/5;
+    
+    @media only screen and (max-width: 850px) {
+        grid-column: 1/2;
+    }
 }
 
 .form--eventDate {
     grid-column: 1;
     grid-row: 5/6;
+    
+    @media only screen and (max-width: 850px) {
+        grid-column: 1/2;
+    }
 }
 
 .form--time {
     grid-column: 2;
     grid-row: 5/6;
+    
+    @media only screen and (max-width: 850px) {
+        grid-column: 1/2;
+    }
 }
 
 .form--guestCount {
     grid-column: 3;
     grid-row: 5/6;
+    
+    @media only screen and (max-width: 850px) {
+        grid-column: 1/2;
+    }
 }
 
 .form--budget {
     grid-column: 1;
     grid-row: 6/7;
+    
+    @media only screen and (max-width: 850px) {
+        grid-column: 1/2;
+    }
 }
 
 .form--eventType {
     grid-column: 2;
     grid-row: 6/7;
+    
+    @media only screen and (max-width: 850px) {
+        grid-column: 1/2;
+    }
+}
+
+.button--submitCater {
+    grid-row: 7/8;
+    
+    @media only screen and (max-width: 850px) {
+        grid-column: 1/2;
+    }
+}
+
+.p--required {
+    grid-column: 2/3;
+    grid-row: 7/8;
+    
+    @media only screen and (max-width: 850px) {
+        grid-column: 1/2;
+    }
 }
