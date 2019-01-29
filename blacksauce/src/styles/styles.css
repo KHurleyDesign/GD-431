@@ -619,6 +619,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    place-self: center;
   }
 }
 
@@ -943,7 +944,6 @@ body {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  place-self: center;
   width: 85%;
 }
 
@@ -1018,7 +1018,6 @@ body {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  place-self: center;
   width: 85%;
 }
 
@@ -1087,7 +1086,6 @@ body {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
-  place-self: center;
   width: 85%;
 }
 
